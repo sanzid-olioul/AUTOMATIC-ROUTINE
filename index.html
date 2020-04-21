@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./dia.jpg" type="image/gif" sizes="16x16">
+    <title>Automated Routine</title>
+    <link rel="stylesheet" href="style.css">
+  <!-- <script src="./javascript.js"></script> -->
+</head>
+<body>
+    <div class="heading">
+
+        <h1>Welcome</h1>
+
+    </div>
+    
+    <div class="main">
+        <form onsubmit="return fnc1()" action="./rutine.html"  target="_blank">
+       <input class="inp" id="number_of_class" required type="text" placeholder="Enter Number of Subject">
+        <br>
+        <input class="inp" id="class_in_weak" required type="text" placeholder="Enter Number of class in a weak">
+        <br>
+        <button class="btn" type="submit">Submit</button>
+    </form>
+    </div>
+   
+    <script>
+        var clan;
+        var clsw;
+
+        function fnc1()
+        {
+            clan = document.getElementById("number_of_class").value;
+            clsw = document.getElementById("class_in_weak").value;
+            localStorage.setItem("ClassNumber", clan);
+            localStorage.setItem("ClassWeak", clsw);
+
+
+            if(clan >=10 ){
+                alert("Subject number can't exceed 9.");
+                return false;
+            }
+            if(clsw >=6 ){
+                alert("Class number can't exceed 9.");
+                return false;
+            }
+
+
+
+
+
+
+            else{
+                true;
+            }
+
+            
+        }   
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+body{
+    background-color:#0f0f0f;
+}
+h1{
+    font-size: 5rem;
+    text-align: center;
+    color: #686666da;
+}
+
+table{
+    background-color: #104f55;
+    display: flex;
+    align-content: center;
+}
+
+table, td {
+    border: 2px solid gray;
+    margin: 5px;
+    margin-top: 5rem;
+    padding: 15px 3rem;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  td{
+      width: 36px;
+  }
